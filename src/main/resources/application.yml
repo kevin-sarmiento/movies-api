@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/categoriesdb
+    username: postgres
+    password: postgres
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
