@@ -1,12 +1,11 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
 
 spring:
-
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/categoriesdb
-    username: postgres
-    password: postgres
+    url: ${SPRING_R2DBC_URL}
+    username: ${SPRING_R2DBC_USERNAME}
+    password: ${SPRING_R2DBC_PASSWORD}
 
 logging:
   level:
